@@ -13,6 +13,8 @@ Requirements
 Usage
 ----------
 
+First of all, you need to add your Twitter API keys in `keys.py`script file.
+
 A simple function is designed to call the econotwbot objetc with it's key args.
 
 ```
