@@ -3,6 +3,8 @@ This python personal retweet bot using Tweepy searches and retweets based on has
 
 This script bot is designed to run indefinitely even if exceptions do occur. Consider submiting your modifyed version at an external server, raspberry pi, or equivalents.
 
+You can see this bot working at [econotw](www.twitter.com/econotw).
+
 Requirements
 ----------
 
