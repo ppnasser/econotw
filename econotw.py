@@ -5,8 +5,7 @@ from keys import *
 from tqdm import tqdm
 
 def play(test=True,i_pages=3, i_hashtag=20, like_pages=False, like_hashtag=False):
-    
-    
+  
     while True == True:
         try:
             econotwbot(test, i_pages, i_hashtag)
@@ -90,8 +89,8 @@ class econotwbot:
             # Print retweet errors
             except tweepy.TweepError as error:
                 if (eval(error.reason)[0]['code'] != 139) and (eval(error.reason)[0]['code'] != 327):
-                    tqdm.write('\nError.',tweet.id,'Retweet not successful. Reason: ')
-                    tqdm.write(error.reason, datetime.now())
+                    tqdm.write('\nError. '+str(tweet.id)+' Retweet not successful. Reason: ')
+                    tqdm.write(str(error.reason) +' '+ str(datetime.now()))
                     self.pbar.update(i-count)
         
             except StopIteration:
